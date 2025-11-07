@@ -1,0 +1,10 @@
+
+<h2>🧾 Cart List</h2>
+
+<ul>
+  <li *ngFor="let cart of carts">
+    <a [routerLink]="['/carts', cart.id]">
+      Cart ID: {{ cart.id }} — Total: {{ cart.total | currency:'INR' }}
+    </a>
+  </li>
+</ul>
